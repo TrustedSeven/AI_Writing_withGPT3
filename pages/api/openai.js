@@ -16,6 +16,6 @@ export default async (req, res) => {
   //   });
   
   // res.status(200).json({text: `${gptResponse.data.choices[0].text}`})
-   res.status(200).json({text: "Hello Next"})
+   res.status(200).json({text: "Hello Next GPT3"})
 }
 
