@@ -30,7 +30,7 @@ const Pricing = () => {
               className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
             >
               Let's choose the package that is best for you and use it happily
-              and cheerfully to make your life.
+              and cheerfully to make your better.
             </motion.p>
           </ScrollAnimationWrapper>
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
@@ -183,11 +183,11 @@ const Pricing = () => {
             <motion.h3
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12 sm:w-6/12 lg:w-4/12 mx-auto">
-              Huge Global Network of Fast VPN{" "}
+              Huge Global Network of SmartGUY{" "}
             </motion.h3>
             <motion.p className="leading-normal  mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12" variants={scrollAnimation}>
-              See LaslesVPN everywhere to make it easier for you when you move
-              locations.
+              See SmartGUY everywhere to make it easier for you when you write
+              things.
             </motion.p>
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper>
