@@ -4,6 +4,7 @@ import ButtonPrimary from "./misc/ButtonPrimary";
 import {motion} from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
+import Link from "next/link";
 
 const Hero = ({
   listUser = [
@@ -37,13 +38,17 @@ const Hero = ({
             variants={scrollAnimation}>
             <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
               <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-                Write anything easy with <strong>SmartGUY</strong>.
+                Write anything easy with <strong>Lutuy</strong>.
               </h1>
               <p className="text-black-500 mt-4 mb-6">
                 Provide AI for all your needs with ease and comfort using
-                SmartGUY generate articles, blog features and paraphrasing tranlation.
+                Lutuy generate articles, blog features and paraphrasing tranlation.
               </p>
-              <ButtonPrimary>Get Started</ButtonPrimary>
+              <ButtonPrimary>
+                <Link href="/test">
+                  <a style = {{fontSize:"20px"}}>Start for Free</a>
+                </Link>
+              </ButtonPrimary>
             </div>
             <div className="flex w-full">
               <motion.div className="h-full w-full" variants={scrollAnimation}>

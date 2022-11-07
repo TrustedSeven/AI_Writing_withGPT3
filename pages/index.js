@@ -7,7 +7,7 @@ import SeoHead from "../components/SeoHead";
 export default function Home() {
   return (
     <>
-      <SeoHead title='Welcome to SmartGuy' />
+      <SeoHead title='Welcome to Lutuy' />
       <Layout>
         <Hero />
         <Feature />

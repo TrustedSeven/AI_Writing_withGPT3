@@ -16,7 +16,7 @@ const Testimoni = ({
       country: "Poland",
       rating: "4.5",
       testimoni:
-        "Wow... I am very happy to use this SmartGUY, it turned out to be more than my expectations and so far there have been no problems. SmartGUY always the best",
+        "Wow... I am very happy to use this Lutuy, it turned out to be more than my expectations and so far there have been no problems. Lutuy always the best",
     },
     {
       name: "iezh Robert",
@@ -25,7 +25,7 @@ const Testimoni = ({
       country: "Poland",
       rating: "4.5",
       testimoni:
-        "Wow... I am very happy to use this SmartGUY, it turned out to be more than my expectations and so far there have been no problems. SmartGUY always the best",
+        "Wow... I am very happy to use this Lutuy, it turned out to be more than my expectations and so far there have been no problems. Lutuy always the best",
     },
     {
       name: "iezh Robert",
@@ -34,7 +34,7 @@ const Testimoni = ({
       country: "Poland",
       rating: "4.5",
       testimoni:
-        "Wow... I am very happy to use this SmartGUY, it turned out to be more than my expectations and so far there have been no problems. SmartGUY always the best",
+        "Wow... I am very happy to use this Lutuy, it turned out to be more than my expectations and so far there have been no problems. Lutuy always the best",
     },
     {
       name: "iezh Robert",
@@ -43,7 +43,7 @@ const Testimoni = ({
       country: "Poland",
       rating: "4.5",
       testimoni:
-        "Wow... I am very happy to use this SmartGUY, it turned out to be more than my expectations and so far there have been no problems. SmartGUY always the best",
+        "Wow... I am very happy to use this Lutuy, it turned out to be more than my expectations and so far there have been no problems. Lutuy always the best",
     },
   ],
 }) => {

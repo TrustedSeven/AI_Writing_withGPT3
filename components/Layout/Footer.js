@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col items-start ">
           {/* <LogoVPN className="h-8 w-auto mb-6" /> */}
           <p className="mb-4">
-            <strong className="font-medium">SmartGUY</strong> is a private
+            <strong className="font-medium">Lutuy</strong> is a private
             website that has unique features and has high security.
           </p>
           <div className="flex w-full mt-2 mb-8 -mx-2">
@@ -24,7 +24,7 @@ const Footer = () => {
               <Instagram className="h-6 w-6" />
             </div>
           </div>
-          <p className="text-gray-400">©{new Date().getFullYear()} - SmartGUY</p>
+          <p className="text-gray-400">©{new Date().getFullYear()} - Lutuy</p>
         </div>
         <div className=" row-span-2 sm:col-span-2 sm:col-start-7 sm:col-end-9 flex flex-col">
           <p className="text-black-600 mb-4 font-medium text-lg">Product</p>

@@ -7,6 +7,7 @@ import Maps from "../public/assets/HugeGlobal.svg";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
+import Link from "next/link";
 
 const Pricing = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -176,6 +177,29 @@ const Pricing = () => {
               </div>
               </motion.div>
             </ScrollAnimationWrapper>
+            
+          </div>
+          <div>
+          <ScrollAnimationWrapper>
+            <motion.div className="w-full flex justify-evenly items-center mt-4 flex-wrap lg:flex-nowrap" variants={scrollAnimation}>
+              <img
+                src="/assets/Icon/paypal.PNG"
+                className="h-14 w-auto mt-4 lg:mt-2"
+                alt=""
+              />
+              <img
+                src="/assets/Icon/mastercard.png"
+                className="h-14 w-auto mt-2 lg:mt-0"
+                alt=""
+              />
+              <img
+                src="/assets/Icon/stripe.png"
+                className="h-12 w-auto mt-2 lg:mt-0"
+                alt=""
+              />
+              
+            </motion.div>
+          </ScrollAnimationWrapper>
           </div>
         </div>
         <div className="flex flex-col w-full my-16">
@@ -183,21 +207,20 @@ const Pricing = () => {
             <motion.h3
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12 sm:w-6/12 lg:w-4/12 mx-auto">
-              Huge Global Network of SmartGUY{" "}
+              Huge Global Network of Lutuy{" "}
             </motion.h3>
             <motion.p className="leading-normal  mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12" variants={scrollAnimation}>
-              See SmartGUY everywhere to make it easier for you when you write
-              things.
+              Lutuy available everywhere to make it easier for you when you write things.
             </motion.p>
+            
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper>
             <motion.div className="py-12 w-full px-8 mt-16" variants={scrollAnimation}> 
               <Maps className="w-full h-auto" />
             </motion.div>
           </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper>
+          {/* <ScrollAnimationWrapper>
             <motion.div className="w-full flex justify-evenly items-center mt-4 flex-wrap lg:flex-nowrap" variants={scrollAnimation}>
-              {/* <Netflix className="h-18 w-auto" /> */}
               <img
                 src="/assets/Icon/amazon.png"
                 className="h-14 w-auto mt-4 lg:mt-2"
@@ -224,7 +247,7 @@ const Pricing = () => {
                 alt=""
               />
             </motion.div>
-          </ScrollAnimationWrapper>
+          </ScrollAnimationWrapper> */}
         </div>
         <div className="flex flex-col w-full my-16" id="testimoni">
           <ScrollAnimationWrapper>
@@ -255,7 +278,11 @@ const Pricing = () => {
                   </h5>
                   <p>Let's subscribe with us and find the fun.</p>
                 </div>
-                <ButtonPrimary>Get Started</ButtonPrimary>
+                <ButtonPrimary>
+                <Link href="/test">
+                  <a style = {{fontSize:"20px"}}>Start for Free</a>
+                </Link>
+                </ButtonPrimary>
               </div>
               <div
                 className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"

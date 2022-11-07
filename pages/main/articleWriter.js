@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../../styles/Home.module.css";
 import { useState, useEffect } from 'react';
+import ButtonPrimary from "../../components/misc/ButtonPrimary";
 
 export default function Home() {
   const [data, setData] = useState( { text:'' });
@@ -12,7 +13,7 @@ export default function Home() {
     const fetchData = async () => {
       if (search) {
       setIsLoading(true);
-      const res = await fetch(`/api/openai`, {
+      const res = await fetch(`/api/article`, {
         body: JSON.stringify({
           name: search
         }),
@@ -50,14 +51,17 @@ export default function Home() {
           value={query}
           onChange={event => setQuery(event.target.value)}
         />
-        <button
+        {/* <button
           type="button"
           onClick={() =>
             setSearch(query)
           }
         >
           Generate
-        </button>
+        </button> */}
+        <ButtonPrimary>
+          <a onClick={()=>setSearch(query)}>Generate</a>
+        </ButtonPrimary>
         
           <h4>News Today</h4>  
           {isLoading ? (
