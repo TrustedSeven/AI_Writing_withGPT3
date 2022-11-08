@@ -19,7 +19,7 @@ const RegisterForm = () => {
       style={{ width: '540px',marginTop:'100px' }}
     >
       <div>
-            <img src="img/avatar.svg" style = {{width: '200px', height:'200px'}} />
+            <img src="img/avatar.svg" style = {{width: '300px', height:'300px'}} />
       </div>
       <div className="field" style={{ marginTop:'50px' }}>
         <p className="control has-icons-left">
@@ -32,11 +32,11 @@ const RegisterForm = () => {
             onChange={e => setEmail(e.target.value)}
           />
           <span className="icon is-small is-left">
-            <i className="material-icons md-dark md-inactive">email</i>
+            <i className="material-icons md-dark md-inactive">Your email</i>
           </span>
         </p>
       </div>
-      <div className="field">
+      <div className="field" style={{ marginTop:'20px' }}>
         <p className="control has-icons-left">
           <input
             className="input"
@@ -47,11 +47,11 @@ const RegisterForm = () => {
             onChange={e => setPassword(e.target.value)}
           />
           <span className="icon is-small is-left">
-            <i className="material-icons md-dark md-inactive">lock</i>
+            <i className="material-icons md-dark md-inactive">Your password</i>
           </span>
         </p>
       </div>
-      <div className="field">
+      <div className="field" style={{ marginTop:'20px' }}>
         <p className="control has-text-centered">
           <button type="submit" className="py-3 lg:py-4 px-12 lg:px-16 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-orange-md transition-all outline-none">
             Create account
