@@ -3,8 +3,9 @@ import Pricing from "../components/Pricing";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout/Layout";
 import SeoHead from "../components/SeoHead";
+import verifyToken from '../getInitialProps/verifyToken';
 
-export default function Home() {
+const Home=()=> {
   return (
     <>
       <SeoHead title='Welcome to Lutuy' />
@@ -16,3 +17,7 @@ export default function Home() {
     </>
   );
 }
+Home.getInitialProps = function (ctx) {
+  verifyToken(ctx);
+};
+export default Home;
