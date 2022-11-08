@@ -8,8 +8,8 @@ import ButtonOutline from '../../components/misc/ButtonOutline.';
 export default function aiWriter() {
   
   return (
-        <Layout>
+        
             <Mainlayout></Mainlayout>
-        </Layout>
+        
     );
 }

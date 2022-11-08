@@ -1,0 +1,9 @@
+.inputbutton{
+    height: 40px;
+    width: 60%;
+    font-size: 20px;
+    border: solid 0.5px orangered;
+    border-radius: 0.7em;
+    padding-left: 10px;
+    
+}

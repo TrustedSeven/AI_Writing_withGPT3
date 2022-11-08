@@ -3,6 +3,7 @@ import "../styles/slick.css";
 import { wrapper } from '../redux';
 import App from 'next/app';
 import { removeError } from '../redux/actions/errorActions';
+import { ThemeProvider } from "@material-tailwind/react";
 // import 'bootstrap/dist/css/bootstrap.css'
 
 
@@ -23,7 +24,11 @@ class MyApp extends App {
 
   render() {
     const { Component, pageProps } = this.props;
-    return <Component {...pageProps} />;
+    return (
+    <ThemeProvider>
+      <Component {...pageProps} />;
+    </ThemeProvider>
+    )
   }
 }
 // export default MyApp;
