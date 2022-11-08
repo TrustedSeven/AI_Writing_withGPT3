@@ -3,6 +3,7 @@ import "../styles/slick.css";
 import { wrapper } from '../redux';
 import App from 'next/app';
 import { removeError } from '../redux/actions/errorActions';
+// import 'bootstrap/dist/css/bootstrap.css'
 
 
 // function MyApp({ Component, pageProps }) {

@@ -17,7 +17,7 @@ const authenticate = ({ email, password }, type) => {
       } = await axios.post(`http://localhost:5000/api/users/${type}`, formData );
       setCookie('token', token);
       if(type == 'login'){
-      Router.push('/main/articleWriter');
+      Router.push('/main/aiWriter');
     }else{
         Router.push('/signin');
 
