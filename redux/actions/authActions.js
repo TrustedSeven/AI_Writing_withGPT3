@@ -16,7 +16,12 @@ const authenticate = ({ email, password }, type) => {
         data: { token },
       } = await axios.post(`http://localhost:5000/api/users/${type}`, formData );
       setCookie('token', token);
-      Router.push('/');
+      if(type == 'login'){
+      Router.push('/main/articleWriter');
+    }else{
+        Router.push('/signin');
+
+      }
       dispatch(removeError());
       dispatch({ type: AUTHENTICATE, payload: token });
     } catch ({ response }) {

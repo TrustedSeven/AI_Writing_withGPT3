@@ -3,6 +3,8 @@ import "../styles/slick.css";
 import { wrapper } from '../redux';
 import App from 'next/app';
 import { removeError } from '../redux/actions/errorActions';
+
+
 // function MyApp({ Component, pageProps }) {
 //   return <Component {...pageProps} />;
 // }
