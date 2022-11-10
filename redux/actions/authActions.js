@@ -3,6 +3,7 @@ import axios from 'axios';
 import { AUTHENTICATE, DEAUTHENTICATE } from '../types/authTypes';
 import { setCookie, removeCookie } from '../../utils/cookie';
 import { createError, removeError } from './errorActions';
+// import { Toast } from 'bootstrap';
 
 // gets token from the api and stores it in the redux store and in a cookie
 const authenticate = ({ email, password }, type) => {
@@ -17,10 +18,11 @@ const authenticate = ({ email, password }, type) => {
       } = await axios.post(`http://localhost:5000/api/users/${type}`, formData );
       setCookie('token', token);
       if(type == 'login'){
+       // Toast("Successfully Log in");
       Router.push('/main/aiWriter');
     }else{
         Router.push('/signin');
-
+        
       }
       dispatch(removeError());
       dispatch({ type: AUTHENTICATE, payload: token });
@@ -30,6 +32,7 @@ const authenticate = ({ email, password }, type) => {
       // } = response;
       // dispatch(createError(message));
       console.log("hello");
+      //Toast("Email or password is incorrect");
     }
   };
 };

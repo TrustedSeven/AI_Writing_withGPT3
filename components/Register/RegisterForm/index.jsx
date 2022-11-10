@@ -48,7 +48,6 @@ const RegisterForm = () => {
             value={password}
             onChange={e => setPassword(e.target.value)}
           />
-          
         </p>
       </div>
       <div className="field" style={{ marginTop:'20px' }}>
